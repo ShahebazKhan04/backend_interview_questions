@@ -1,0 +1,255 @@
+Node Interview Questions:-
+
+#JavaScript
+
+1) What is JavaScript?
+Answer: JavaScript is scripting language used for creating dynamic web content. It is dependent, single-threaded and synchronous by default but supports asynchronous behavior.
+
+2) What are the different data types in JavaScript?
+Answer: Primitive types: SSNNBBU. Non-primitive type: Object, Arrays and Date.
+
+3) What is the difference between == and ===?
+Answer: == try to convert the value to the same data type, === strictly check the value and the data type.
+
+4) What are JavaScript functions?
+Answer: function is a block of reusable code designed to perform a particular task.
+
+5) What are closures in JavaScript?
+Answer: Closure has the access of its outer scope variable, even after the outer function has executed.
+
+6) What is the difference between let, const, and var?
+Answer: Var is global level scope it can be redeclared and re-assigned. Let and const is ES6 features it block level scope, let cannot be redeclared but can be re-assigned. const cannot be redeclared or re-assigned.
+
+7) What is the difference between undefined and null?
+Answer: Undefined Means a variable has been declared but not assigned a value, null means assigned value the value null.
+
+8) What are operators in JavaScript?
+Answer: There are three type of operators Assignment, Logical, Arithmetical.
+
+9) What are events in JavaScript?
+Answer: JavaScript events Are the actions or the occurrence that happen in the browser. They can be trigged by user interaction or browser by it self.
+
+10) What are the Array in JavaScript?
+Answer: Arrays are use to store multiple data in a Single Variable.
+
+11) What is callback in JavaScript?
+Answer: Hoisting is behavior is Java Script. Declaration of variable and function are moved to top of their respective scope during the complimation phase.
+
+12) What is promises in JavaScript?
+Answer: Promises are objects in JavaScript that take a function with resolve and reject as arguments. They provide a way to handle asynchronous operations and enable better control flow. Promises allow you to use methods like .then() to handle the resolved state and .catch() to handle the rejected state, respectively.
+
+13) what is async/await in JavaScript?
+Answer: These are keywords in JavaScript used to handle asynchronous operations more easily and readably. async is used to make a function asynchronous, and await is used to pause the execution of the function until the asynchronous operation is resolved.
+
+14) What is Dom?
+Answer: DOM stands for Document Object Model. It is a programming interface that provides a way to access, manipulate, and interact with the structure of a web document.
+
+15) What is JSON?
+Answer: JSON stands for JavaScript Object Notation. It is a light weight format for storing and transporting data.
+
+16) What is arrow function in JavaScript?
+Answer: Arrow Function is shorter way to write a function.
+
+17) What is Spread operator and Rest parameter i JavaScript.
+Answer: The spread operator is a feature in JavaScript that allows you to expand or unpack items into arrays or objects. The rest parameter allows a function to take any number of arguments and puts them into an array.
+
+18) What is purpose is try, catch and finally block in JavaScript?
+Answer: The try block contains the code that might throw an exception. If an exception occurs, it is caught by the catch block, which contains the error handling logic. The finally block, if present, is executed regardless of whether an exception is thrown or not.
+
+20) Difference between function expression and function declaration JavaScript?
+Answer: They difference between them in syntax and Hoisting. A function declaration is defined with the function keyword, followed by the function name, and it is hoisted. A function expression is defined by assigning a function to a variable, which can be anonymous or named, and function expressions are not hoisted.
+
+21) what is difference between map() and forEach() in JavaScript?
+Answer: The map() function creates a new array by transforming each element in an existing array and returns the transformed array, while forEach() executes a function for each element in an array but doesn't return anything.
+
+22) What is callback hell and how it avoided?
+Answer: Callback hell happens when multiple callback functions are nested on top of each other that making the code harder to read and maintain. There are several ways to avoid it, such as using Promises, async/await, and try/catch blocks.
+
+23) What is Deep copy and Shallow copy in JavaScript?
+Answer: Shallow copy creates a new object with reference to the same memory location as the original object. While deep copy creates a new object with new memory location for all of its properties and nested arrays or objects.
+
+24) What is Synchronous and Asynchronous in JavaScript?
+Answer: Asynchronous is non-blocking architecture, the execution of one task is not depend on another task.  While synchronous is blocking architecture, the execution of each operation depends on completing the one before it.
+
+25) What is difference between While and doWhile?
+Answer: The while loop checks the condition before executing the loop body, whereas the do...while loop executes the loop body at least once before checking the condition.
+
+26) What is Currying in JavaScript?
+Answer: Currying is a function programming concept where a function is transformed into a sequence of functions. each taking a single argument. Instead of taking all its arguments at once, a curried function takes one argument, returns a new function that takes the next argument,
+
+27) Call By Value & Call By Ref :-
+Answer: Call By Value - A copy of the value is passed to the function, it Changes inside the function do not affect the original value. It uses Primitive data types like number, string.
+Call By Ref - A reference (memory address) to the value is passed, it Changes inside the function affect the original value. It uses Non-primitive data types like object, array.
+
+
+
+#Node.js
+
+1) What is Node.js?
+Answer: Node.js is a runtime environment that allows you to run JavaScript outside of a web browser, It use for building fast, scalable, and efficient server-side applications using JavaScript.
+
+2) Why Node.js?
+Answer: Node.js offers significant advantages Fast and Efficient, Highly scalable, Asynchronous and Non-blocking I/O etc.
+
+3) What is Event-Loop?
+Answer: The event loop is a mechanism that handles asynchronous operations, and It allows Node.js to perform non-blocking I/O operations in single-threaded.
+
+4) What is Event-Driven?
+Answer: Event-driven programming in Node.js uses an event loop to manage multiple events asynchronously. The non-blocking model ensures that tasks don't wait for each other to finish, allowing Node.js to handle multiple operations simultaneously to make it fast and efficient
+
+5) What is Non-blocking I/O?
+Answer: The non-blocking model ensures that tasks don't wait for each other to finish.
+
+6) What are callbacks in Node.js?
+Answer: A callback is a function that is passing inside another function as an argument.
+
+7) What is the difference between require() and import in Node.js?
+Answer: require() is used to include modules in Node.js (CommonJS style), while import is part of ES6 module syntax.
+
+8) What is middleware?
+Answer: Middleware functions that sits between the request and response cycle, that perform tasks like logging, authentication and data processing.
+
+9) What is Buffer in Node.js?
+Answer: A buffer is a temporary storage space for binary data, that allowing Node.js to handle raw data directly, like file, images etc.
+
+10) What is Stream in Node.js?
+Answer: stream is a way to handle data that is too large to process all at once by breaking it into smaller chunks. It allows reading or writing data piece by piece instead of loading everything into memory at once.
+
+11) Cluster in Node.js?
+- The Cluster module is used to run multiple instances of Node.js that can distribute workloads among their application processes, and it enables creation child process (called workers) that run simultaneously.
+
+12) Thread Pool in Node.js?
+- A thread pool is a collection of worker threads that manage heavy tasks, such as API fetching and network-related operations.
+
+13) Worker Thread in Node.js?
+- In Node.js, Worker Threads provide a way to execute JavaScript code in parallel across multiple threads.
+
+14) Child Process in Node.js?
+- In Node.js, a child process is a separate process created by a Node.js application to perform tasks in parallel.
+
+15) What is a module in Node.js?
+Answer: A module in Node.js is a block of code that provides specific functionality, which can be reused across different parts of an application.
+
+16) Is Node.js single-threaded?
+Answer: Yes, Node.js is single-threaded but uses event-driven architecture and non-blocking I/O to handle multiple requests efficiently.
+
+17) What is middleware?
+Answer: Middleware functions that sits between the request and response cycle, that perform tasks like logging, authentication, and data processing.
+
+18) What is npm and its advantages?
+Answer: npm is the default package manager for Node.js, offering benefits like dependency management, version control, and a centralized repository.
+
+19) What is package.json in Node.js?
+Answer: package.json is a metadata file in Node.js that contains information about the project, such as dependencies, scripts, and version.
+
+20) What is body-parser in Node.js?
+Answer: Body-parser is middleware that parses incoming request bodies in a middleware before handling it in Node.js applications.
+
+21) What is CORS in Node.js?
+Answer: CORS stands for Cross-Origin Resource Sharing, allowing restricted resources on a web page to be requested from another domain.
+
+22) What is libuv library?
+Answer: Libuv is a powerful library written in C that gives Node.js its ability to handle asynchronous operations and non-blocking I/O.
+
+23) What is npm and its advantages?
+Answer: npm is the default package manager for Node.js, offering benefits like dependency management, version control, and a centralized repository.
+
+24) What is REPL in Node.js?
+Answer: REPL stands for Read, Evaluate, Print, and Loop; it's an interactive environment for executing Node.js code and debugging.
+Read: Takes user input and parses it into a JavaScript expression.
+Eval: Evaluates the parsed JavaScript code.
+Print: Displays the result of the evaluated code to the user.
+Loop: Repeats the process for the next input.
+
+25) Authentication & Authorization?
+Answer: Authentication is the process of verifying the identity of a user. Authorization is the process of determining what that person is allowed to do or access after they’ve been authenticated.
+
+26) EventEmitter in Node.js?
+Answer: EventEmitter is a class in Node.js used to handle events. It allows objects to emit events (e.g., "data" or "error") and listen for them to perform actions when they occur.
+
+27) setTimeout & setImmediate?
+- setTimeout() delays the execution of a function by a specified time, while setImmediate() schedules a function to run after the current event loop cycle.
+
+28) How do you handle errors in Node.js?
+Answer: There are several ways to handle errors in Node.js, including Promises, async/await, and try/catch blocks.
+
+29)What is the role of the global object in Node.js?
+Answer: The global object in Node.js provides global variables and functions that can be accessed anywhere in your application. It’s similar to the window object in browsers.
+
+30) What is process.nextTick() in Node.js?
+Answer: process.nextTick() is used to execute a function after the current operation completes, but before any I/O tasks. It ensures that a callback is executed as soon as possible.
+
+
+#Express
+
+1) What is Express.js?
+Answer: Express.js is a minimal and flexible Node.js web application framework that provides a set of features for building web and mobile applications. It simplifies the process of handling HTTP requests, routing, middleware, and managing views. Express is widely used for creating RESTful APIs and web applications.
+
+2) What is the difference between app.use() and app.all() in Express?
+app.use() is used to apply middleware functions to routes, while app.all() is used to define handlers for all HTTP methods (GET, POST, etc.) for a specific route.
+
+3) What is the difference between res.send() and res.json() in Express?
+Answer: res.send() is used to send a response of any type (text, HTML, etc.), while res.json() is specifically used to send a JSON response.
+
+4)What is Express Router?
+Answer: Express Router is a feature that allows you to create modular route handlers.
+
+5) How do you handle errors in Express.js?
+Answer: Errors in Express.js are handled using middleware functions with four parameters: err, req, res, next.
+
+6) What is the purpose of req.body in Express.js?
+Answer: req.body contains data sent in the body of the HTTP request, typically used in POST or PUT requests to handle form data or JSON payload.
+
+7) What is the purpose of app.listen() in Express.js?
+Answer: app.listen() is used to bind and listen for incoming HTTP requests on a specific port.
+
+8) What is the purpose of app.use() in Express.js?
+Answer: app.use() is used to apply middleware functions to specific routes or all routes in an Express application.
+
+
+#MongoDB 
+
+1) What is MongoDB?
+Answer: MongoDB is a NoSQL database that stores data in a flexible, JSON-like format called BSON (Binary JSON). It allows you to store and query large amounts of unstructured data.
+
+2) What is the difference between SQL and NoSQL databases?
+Answer: SQL databases store data in tables with a fixed schema (e.g., MySQL), while NoSQL databases like MongoDB store data in collections with a flexible schema (e.g., documents).
+
+3) What are collections and documents in MongoDB?
+A collection is a group of MongoDB documents, similar to a table in SQL. A document is a set of key-value pairs, similar to a row in SQL.
+
+4) What is BSON in MongoDB?
+Answer: BSON (Binary JSON) is a binary format that MongoDB uses to store data.
+
+5) What is the difference between find() and findOne() in MongoDB?
+Answer: find() returns an array of documents that match the query, while findOne() returns only the first document that matches the query.
+
+6) What is an ObjectId in MongoDB?
+Answer: ObjectId is a unique identifier automatically assigned to documents when they are created. 
+
+7) What is indexing in MongoDB?
+Answer: Indexing in MongoDB is a way to improve the queries performance.
+
+8) Replication in MongoDB?
+Answer: Replication is the process of creating and maintaining multiple copies of data across different servers.
+
+9) Sharding in MongoDB?
+Answer: Sharding is a method in MongoDB for distributing data across multiple servers.It helps in horizontal scaling by breaking up a large collection into smaller, manageable parts called shards.
+
+10) Replia Set in MongoDb?
+Answer: Replica set is a group of MongoDB servers that maintain the same data set, providing redundancy and high availability.
+
+11) What is .prety() in MongoDb?
+Answer: The.pretty() method in MongoDB is used to format the output of a query in a more readable and human-friendly way.
+
+12) Scaling in MongoDB :-
+- In MongoDB, scaling is a strategy used to handle increased data loads and expand the database's capacity
+  Horizontal Scaling - Expands capacity by adding multiple servers and distributing data across them.
+  Vertical Scaling   - Adding more resources (CPU, RAM, or storage) to a single server.
+  Horizontal scaling is better for handling large datasets and high traffic, while vertical scaling is simpler but limited by the server's hardware capacity.
+
+13) * What is Aggregation :-
+- Aggregation is the process that it groups the data from multiple data into a single data document based on the specified expression.
+Aggregation pipeline :-
+- The aggregation process in MongoDB consists of several stages each stages transforming the data in some way. 
+- A pipeline is array of different operations.
